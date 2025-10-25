@@ -6,12 +6,27 @@ AREA = 16.0        # total square side (±8m)
 SAFE_RADIUS = 2.0  # avoid spawning right on top of the rover
 
 def rock_node(def_name, x, z, rot, scale, r, g, b):
-    return f'''DEF {def_name} Rock {{
-  translation {x} 0 {z}
+    y = scale * 0.25  # Half the box height to sit on ground
+    size = scale * 0.5
+    return f'''DEF {def_name} Solid {{
+  translation {x} {y} {z}
   rotation 0 1 0 {rot}
-  scale {scale} {scale} {scale}
-  type "flat"
-  color {r} {g} {b}
+  children [
+    Shape {{
+      appearance PBRAppearance {{
+        baseColor {r} {g} {b}
+        roughness 1
+        metalness 0
+      }}
+      geometry Box {{
+        size {size} {size*0.5} {size}
+      }}
+    }}
+  ]
+  name "{def_name}"
+  boundingObject Box {{
+    size {size} {size*0.5} {size}
+  }}
 }}'''
 
 def main():

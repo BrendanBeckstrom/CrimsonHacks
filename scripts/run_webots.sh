@@ -4,7 +4,7 @@ set -euo pipefail
 # export WEBOTS_HOME="/Applications/Webots.app/Contents/MacOS"
 # export PATH="$WEBOTS_HOME:$PATH"
 
-WORLD_PATH="webots/world/CrimsonMars.wbt"
+WORLD_PATH="webots/worlds/sojourner_simple.wbt"
 CONTROLLER_NAME="rover_controller"
 
 if ! command -v webots &>/dev/null; then

@@ -1,0 +1,129 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Trained Models
+*.zip
+*.pkl
+*.pth
+*.pt
+*.h5
+*.ckpt
+ppo_rover*
+models/
+checkpoints/
+
+# Logs
+*.log
+logs/
+*.out
+
+# Webots
+*.wbproj
+.*.wbproj
+*.perspective
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Data files (if you collect datasets)
+data/
+datasets/
+*.csv
+*.npy
+*.npz
+
+# Video/Image outputs
+recordings/
+screenshots/
+*.mp4
+*.avi
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Environment variables (if you use .env files)
+.env.local
+.env.development
+.env.test
+.env.production
+
+# TensorBoard
+runs/
+tb_logs/
+tensorboard/
+
+# Backup files
+*.bak
+*.backup
